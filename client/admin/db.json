@@ -1,0 +1,8 @@
+{
+    "pokemons": [
+      {
+        "name": "charmander",
+        "type": "fire"
+      }
+    ]
+  }
