@@ -1,10 +1,11 @@
 import "./App.css";
-// import SubjectCard from "./components/SubjectCard"
-import Calculadora from "./components/Calculadora"
+// import Calculadora from "./components/Calculadora"
+import CalculadoraS from "./components/CalculadoraS"
+
 function App() {
 
   return (
-    <Calculadora/>
+    <CalculadoraS/>
   );
 }
 
