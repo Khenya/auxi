@@ -41,6 +41,6 @@ test('Se debe verificar que se realice una suma con numeros decimales correctame
   fireEvent.click(screen.getByText('1'));
   fireEvent.click(screen.getByText('='));
   
-  const result = screen.getByTestId('resultado');  
+  const result = screen.getByTestId('resultado'); 
   expect(result.textContent).toEqual('7.300000000000001');  
 });
