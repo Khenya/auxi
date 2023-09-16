@@ -5,7 +5,9 @@ interface PantallaProps {
 }
 
 const Pantalla: React.FC<PantallaProps> = ({ input }) => (
-  <div className='input'>
+  <div 
+    id={`result`}
+    className='input'>
     {input}      
   </div>
 );
