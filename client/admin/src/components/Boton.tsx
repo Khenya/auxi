@@ -1,18 +1,24 @@
 import '../styless/Boton.css';
 
-function Boton(props) {
+interface BotonProps {
+  children: string;
+  manejarClic: (val: string) => void;
+}
 
-  const esOperador = valor => {
-    return isNaN(valor) && (valor != '.') && (valor != '=');
+const Boton: React.FC<BotonProps> = (props) => {
+  const esOperador = (valor: string) => {
+    return isNaN(Number(valor)) && valor !== '.' && valor !== '=';
   };
 
   return (
     <div
-      className={`boton-contenedor ${esOperador(props.children) ? 'operador' : ''}`.trimEnd()}
-      onClick={() => props.manejarClic(props.children)}>
+      id={`boton-${props.children}`}
+      className={`boton-contenedor ${esOperador(props.children) ? 'operador' : ''}`}
+      onClick={() => props.manejarClic(props.children)}
+    >
       {props.children}
     </div>
   );
-}
+};
 
 export default Boton;

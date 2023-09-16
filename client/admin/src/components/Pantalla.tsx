@@ -1,9 +1,13 @@
 import '../styless/Pantalla.css';
 
-const Pantalla = ({ input }) => (
+interface PantallaProps {
+  input: string;
+}
+
+const Pantalla: React.FC<PantallaProps> = ({ input }) => (
   <div className='input'>
     {input}      
   </div>
-); 
+);
 
 export default Pantalla;
