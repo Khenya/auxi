@@ -1,8 +1,18 @@
-import Button from '@mui/material/Button';
+import '../styless/Boton.css';
 
-export default function BasicButtons(n:string) {
-  const {} = n
+function Boton(props) {
+
+  const esOperador = valor => {
+    return isNaN(valor) && (valor != '.') && (valor != '=');
+  };
+
   return (
-    <Button variant="contained">n</Button>
+    <div
+      className={`boton-contenedor ${esOperador(props.children) ? 'operador' : ''}`.trimEnd()}
+      onClick={() => props.manejarClic(props.children)}>
+      {props.children}
+    </div>
   );
 }
+
+export default Boton;
