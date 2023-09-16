@@ -1,4 +1,4 @@
-import '../styless/CalculadoraS.css';
+//import '../styless/CalculadoraS.css';
 import Boton from './Boton';
 import BotonClear from './BotonClear';
 import Pantalla from './Pantalla';
@@ -20,8 +20,9 @@ function CalculadoraS() {
     };
   
     return (
-      <div className='App'>
+      <div className='CalculadoraS'>
         <div className='contenedor-calculadora'>
+        <span data-testid="resultado">{input}</span>  {}
           <Pantalla input={input}/>
           <div className='fila'>
             <Boton manejarClic={agregarInput}>1</Boton>

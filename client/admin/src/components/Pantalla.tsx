@@ -1,4 +1,4 @@
-import '../styless/Pantalla.css';
+//import '../styless/Pantalla.css';
 
 interface PantallaProps {
   input: string;

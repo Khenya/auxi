@@ -1,4 +1,4 @@
-import '../styless/Boton.css';
+// import '../styless/Boton.css';
 
 interface BotonProps {
   children: string;
