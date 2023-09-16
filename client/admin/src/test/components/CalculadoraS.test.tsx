@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import CalculadoraS from '../../components/Calculadoras';
+import CalculadoraS from '../../components/CalculadoraS';
 
 test('Se debe verificar que se realice una suma correctamente', () => {
   render(<CalculadoraS />);
