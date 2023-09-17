@@ -19,6 +19,7 @@ const Boton: React.FC<BotonProps> = (props) => {
       {props.children}
     </div>
   );
+  
 };
 
 export default Boton;
