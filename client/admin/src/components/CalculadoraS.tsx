@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 //import '../styless/CalculadoraS.css';
-=======
-// import '../styless/CalculadoraS.css';
->>>>>>> 410c88a3a2ef83bde1d5c44566264b8c6d5418ed
+
 import Boton from './Boton';
 import BotonClear from './BotonClear';
 import Pantalla from './Pantalla';
