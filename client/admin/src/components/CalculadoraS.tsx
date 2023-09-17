@@ -1,4 +1,4 @@
-import '../styless/CalculadoraS.css';
+// import '../styless/CalculadoraS.css';
 import Boton from './Boton';
 import BotonClear from './BotonClear';
 import Pantalla from './Pantalla';
